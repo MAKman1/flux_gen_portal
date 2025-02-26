@@ -113,6 +113,9 @@ const GalleryPage = () => {
                             <p style={{ color: 'yellow', fontSize: '12px', marginBottom: '5px' }}>
                                 <strong>Steps:</strong> {image.steps}
                             </p>
+                            <p style={{ color: 'yellow', fontSize: '12px', marginBottom: '5px' }}>
+                                <strong>Status:</strong> {image.status}
+                            </p>
                             <p style={{ color: 'green', fontSize: '12px' }}>
                                 <strong>Created:</strong> {new Date(image.timestamp).toLocaleDateString('en-US', {
                                     day: '2-digit',

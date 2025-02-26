@@ -9,7 +9,7 @@ const HomePage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (password === 'SecretPassword124') {
+    if (password === 'PATHAn120001@') {
       router.push('/gallery');
     } else {
       setError('Incorrect password.');

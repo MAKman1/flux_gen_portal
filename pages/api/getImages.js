@@ -74,9 +74,9 @@ export default async function handler(req, res) {
             newLastVisibleId = images[images.length - 1].id;
         }
 
-        res.status(200).json({ images: RESPONSE_OBJ, lastVisibleId: "23" });
+        // res.status(200).json({ images:  RESPONSE_OBJ, lastVisibleId: "23" });
 
-        // res.status(200).json({ images, lastVisibleId: newLastVisibleId }); // important: Send back last image document ID too!
+        res.status(200).json({ images, lastVisibleId: newLastVisibleId }); // important: Send back last image document ID too!
 
     } catch (error) {
         console.error("Firestore error:", error);
